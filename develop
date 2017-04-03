@@ -55,6 +55,18 @@ if [ $# -gt 0 ]; then
           app \
           sh -c "cd /var/www/html && ./vendor/bin/phpunit $@"
 
+  elif [ "$1" == "init" ]; then
+    shift 1
+    mkdir src
+    $COMPOSE run --rm $TTY \
+        -w /var/www/html \
+        app \
+        composer create-project roots/bedrock .
+    $COMPOSE run --rm $TTY \
+        -w /var/www/html/web/app/themes \
+        app \
+        composer create-project roots/sage sunwolf dev-master
+
   # Else, pass-thru args to docker-compose
   else
     $COMPOSE "$@"
