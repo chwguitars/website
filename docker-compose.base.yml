@@ -4,7 +4,7 @@ services:
     build:
       context: ./docker/app
       dockerfile: Dockerfile
-    image: sunwolf/WordPress
+    image: sunwolf/wordpress
     volumes:
      - ./src:/var/www/html
     networks:
