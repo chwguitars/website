@@ -1,0 +1,21 @@
+{{ define "main" }}
+<section class="page-section clearfix">
+  <div class="container">
+    <div class="intro">
+      <img class="intro-img img-fluid mb-3 mb-lg-0 rounded" src="images/intro.jpg" alt="">
+      <div class="intro-text left-0 text-center bg-faded p-5 rounded">
+        <h2 class="section-heading mb-4">
+          {{ with .Params.SmallTitle }}<span class="section-heading-upper">{{.}}</span>{{ end }}
+          <span class="section-heading-lower">{{ .Title }}</span>
+        </h2>
+        <p class="mb-3">
+          {{ .Content }}
+        </p>
+        <div class="intro-button mx-auto">
+          <a class="btn btn-primary btn-xl" href="https://goo.gl/maps/qbuEfvK9zGM2">Visit Us Today!</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{{ end }}

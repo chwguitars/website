@@ -1,0 +1,17 @@
+{{ define "main" }}
+    <h1>{{ .Title }}</h1>
+    <p>{{ .Summary }}</p>
+    {{ range .Paginator.Pages }}
+        <article class="card" style="width: 18rem;">
+            <img class="card-img-left" src="{{ "images/" | absURL }}{{ .Params.Image }}" alt="{{ .Title }}">
+            <div class="card-body">
+                <h5 class="card-title">{{ .Title }}</h5>
+                <p class="card-text">{{ .Content }}</p>
+                <a href="{{ .Permalink }}" class="btn btn-primary">Learn More</a>
+            </div>
+        </article>
+    {{ end }}
+
+    {{ template "_internal/pagination.html" . }}
+
+{{ end }}

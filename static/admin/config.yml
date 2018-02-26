@@ -1,0 +1,25 @@
+backend:
+  name: git-gateway
+  branch: netlify
+  
+media_folder: "static/uploads"
+public_folder: "/uploads"
+collections:
+
+  - name: "page"
+    label: "Page"
+    folder: "content"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Body", name: "body", widget: "markdown" }
+  
+  - name: "page"
+    label: "Page"
+    folder: "content/page"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Body", name: "body", widget: "markdown" }

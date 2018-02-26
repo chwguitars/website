@@ -1,0 +1,29 @@
+// ...
+@import "variables";
+@import "~bootstrap/scss/bootstrap";
+// // Required
+// @import "~bootstrap/scss/functions";
+// @import "~bootstrap/scss/variables";
+// @import "~bootstrap/scss/mixins";
+
+// // Optional
+// @import "~bootstrap/scss/reboot";
+// @import "~bootstrap/scss/type";
+// @import "~bootstrap/scss/images";
+// @import "~bootstrap/scss/code";
+// @import "~bootstrap/scss/grid";
+
+@import url('https://fonts.googleapis.com/css?family=Russo+One');
+@import url('https://fonts.googleapis.com/css?family=Ceviche+One');
+@import url('https://fonts.googleapis.com/css?family=Lora');
+
+@import "mixins";
+@import "global";
+@import "navbar";
+@import "buttons";
+@import "intro";
+@import "page";
+@import "products";
+@import "contact";
+@import "footer";
+@import "bootstrap-overrides";

@@ -1,0 +1,24 @@
+{{ define "main" }}
+<section class="page-section page-heading">
+  <div class="container">
+    {{ with .Params.FeaturedImg }}
+    <img class="img-fluid rounded page-heading-img mb-3 mb-lg-0" src="{{ . }}" alt="">
+    {{ end }}
+    <div class="page-content">
+      <div class="row">
+        <div class="col-xl-9 col-lg-10 mx-auto">
+          <div class="bg-faded rounded p-5">
+            <h2 class="section-heading mb-4">
+              {{ with .Params.UpperHeading }}
+              <span class="section-heading-upper">{{ . }}</span>
+              {{ end }}
+              <span class="section-heading-lower">{{ .Title }}</span>
+            </h2>
+            {{ .Content }}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{{ end }}

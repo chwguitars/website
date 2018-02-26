@@ -1,0 +1,34 @@
+.section-contact {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  .contact-inner {
+    position: relative;
+    padding: 3rem;
+    margin: 0.5rem;
+    background-color: fade-out($white, 0.15);
+  }
+}
+
+.list-hours {
+  font-size: 0.9rem;
+  .list-hours-item {
+    border-bottom: 1px solid fade-out($primary, 0.5);
+    padding-bottom: .25rem;
+    margin-bottom: 1rem;
+    font-style: italic;
+    &.today {
+      font-weight: bold;
+      color: $primary;
+    }
+  }
+  @include media-breakpoint-up(lg) {
+    width: 50%;
+    font-size: 1.1rem;
+  }
+}
+
+.address {
+  strong {
+    font-size: 1.2rem;
+  }
+}

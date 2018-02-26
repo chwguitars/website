@@ -1,0 +1,77 @@
+body {
+  @include body-font;
+  background: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url('../images/bg.jpg');
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  @include heading-font;
+}
+
+p {
+  line-height: 1.75;
+}
+
+.text-faded {
+  color: fade-out($white, 0.7);
+}
+
+.site-heading {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  margin-bottom: 0;
+  text-transform: uppercase;
+  line-height: 1;
+
+  @include heading-font;
+  .site-heading-upper {
+    display: block;
+    font-size: 2rem;
+    font-weight: 800;
+  }
+  .site-heading-lower {
+    font-size: 5rem;
+    font-weight: 100;
+    line-height: 4rem;
+    -webkit-text-stroke-width: 2.5px;
+    -webkit-text-stroke-color: black;
+  }
+}
+
+.page-section {
+  margin-top: 10rem;
+  margin-bottom: 5rem;
+
+  @include media-breakpoint-down(sm) { 
+    margin-top: 5rem;
+  }
+}
+
+.section-heading {
+  text-transform: uppercase;
+  .section-heading-upper {
+    display: block;
+    font-size: 1rem;
+    font-weight: 800;
+  }
+  .section-heading-lower {
+    display: block;
+    font-size: 3rem;
+    font-weight: 100;
+
+    @include media-breakpoint-down(sm) { 
+      font-size: 2rem;
+    }
+  }
+}
+
+.bg-faded {
+  background-color: fade-out($white, 0.15);
+}
