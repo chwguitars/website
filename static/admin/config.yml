@@ -14,10 +14,10 @@ collections:
     fields:
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Body", name: "body", widget: markdown }
-    files:
-    - name: "home"
-      label: "Home Page"
-      file: "content/_index.md"
-      fields:
-        - {label: "Title", name: "title", widget: "string"}
-        - {label: "Upper Heading", name: "upperHeading", widget: "string"}
+    
+  - name: "home"
+    label: "Home Page"
+    file: "content/_index.md"
+    fields:
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Upper Heading", name: "upperHeading", widget: "string"}
