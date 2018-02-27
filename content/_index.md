@@ -15,6 +15,8 @@ Thank you for visiting CHW Guitars.
 We are a full service Musical Instrument store and custom shop.
 Please check out our new projects by clicking on the picture below or browse through our pages above.
 
+[![Check out our projects!](/uploads/home_slideshow.gif)](/pictures)
+
 Follow CHW Guitars on Facebook & Instagram
 
 Be sure to visit us at our store.
