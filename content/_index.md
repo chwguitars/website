@@ -1,6 +1,6 @@
 ---
-title: Welcome
-upperHeading:
+title: Let's Rock
+upperHeading: Welcome
 layout: home
 url: /
 menu:
@@ -19,4 +19,4 @@ Follow CHW Guitars on Facebook & Instagram
 
 Be sure to visit us at our store.
 
-Call us: <a href="tel:503.472.4500">503-472-4500</a>
+Call us: [503-472-4500](tel:503.472.4500)
