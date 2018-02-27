@@ -10,4 +10,6 @@ menu:
     url: "/rentals/"
     weight: 6
 ---
-
+IMAGE
+2017 Band instrument rentals now available, please inquire at our store.
+IMAGE
