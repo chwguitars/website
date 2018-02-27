@@ -10,4 +10,3 @@ menu:
     url: "/pictures/"
     weight: 3
 ---
-

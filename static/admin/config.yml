@@ -5,18 +5,19 @@ media_folder: "static/uploads"
 public_folder: "/uploads"
 collections:
   
-  - label: "Page"
-    name: "page"
-    folder: "content/page"
+  - name: "pages"
+    label: "Pages"
+    label_singular: "Page"
+    folder: "content/pages"
     create: true
     slug: "{{slug}}"
     fields:
-      - { label: Title, name: title, widget: string }
-      - { label: Body, name: body, widget: markdown }
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Body", name: "body", widget: markdown }
     files:
-    - label: "Home Page"
-      name: "home"
+    - name: "home"
+      label: "Home Page"
       file: "content/_index.md"
       fields:
-        - {label: Title, name: title, widget: string}
-        - {label: "Upper Heading", name: upperHeading, widget: string}
+        - {label: "Title", name: "title", widget: "string"}
+        - {label: "Upper Heading", name: "upperHeading", widget: "string"}

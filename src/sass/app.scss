@@ -1,6 +1,6 @@
 // ...
-@import "variables";
-@import "~bootstrap/scss/bootstrap";
+@import 'variables';
+@import '~bootstrap/scss/bootstrap';
 // // Required
 // @import "~bootstrap/scss/functions";
 // @import "~bootstrap/scss/variables";
@@ -13,17 +13,19 @@
 // @import "~bootstrap/scss/code";
 // @import "~bootstrap/scss/grid";
 
-@import url('https://fonts.googleapis.com/css?family=Russo+One');
-@import url('https://fonts.googleapis.com/css?family=Ceviche+One');
-@import url('https://fonts.googleapis.com/css?family=Lora');
+// sass-lint:disable no-url-domains, no-url-protocols
+@import url('//fonts.googleapis.com/css?family=Russo+One');
+@import url('//fonts.googleapis.com/css?family=Ceviche+One');
+@import url('//fonts.googleapis.com/css?family=Lora');
+// sass-lint:enable no-url-domains, no-url-protocols
 
-@import "mixins";
-@import "global";
-@import "navbar";
-@import "buttons";
-@import "intro";
-@import "page";
-@import "products";
-@import "contact";
-@import "footer";
-@import "bootstrap-overrides";
+@import 'mixins';
+@import 'global';
+@import 'navbar';
+@import 'buttons';
+@import 'intro';
+@import 'page';
+@import 'products';
+@import 'contact';
+@import 'footer';
+@import 'bootstrap-overrides';

@@ -10,8 +10,12 @@ export function setHours() {
   let open, close, next;
   switch (now.day()) {
     case 0:
+      next = "Tuesday";
+      setClosedTime();
+      break;
     case 1:
-      console.log("closed");
+      next = "tomorrow";
+      setClosedTime();
       break;
     case 6:
       open = moment().set({ 'hour': 10, 'minute': 0, 'second': 0 });
@@ -19,8 +23,7 @@ export function setHours() {
       next = "Tuesday";
 
       if (!now.isBetween(open, close)) {
-        setHeadings();
-        // (now.isBefore(open)) ? upper.innerHTML = "Come back at " + open.format("ha") : upper.innerHTML = "Come back Tuesday";
+        setOpenTime();
       }
       break;
     default:
@@ -29,12 +32,17 @@ export function setHours() {
       next = "tomorrow";
 
       if (!now.isBetween(open, close)) {
-        setHeadings();
+        setOpenTime();
       }
   }
 
-  function setHeadings() {
+  function setOpenTime() {
     (now.isBefore(open)) ? upper.innerHTML = "Come back at " + open.format("ha") : upper.innerHTML = "Come back " + next;
+    lower.innerHTML = "We're Closed";
+  }
+
+  function setClosedTime() {
+    upper.innerHTML = "Come back " + next;
     lower.innerHTML = "We're Closed";
   }
 }
