@@ -12,7 +12,22 @@ collections:
     create: true
     slug: "{{slug}}"
     fields:
-      - { label: "Title", name: "title", widget: "string" }
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Upper Heading", name: "upperHeading", widget: "string"}
+      - {label: "Publish date", name: "date", widget: "datetime"}
+      - {label: "URL", name: "Page URL", widget: "string"}
+      - label: "Menu"
+        name: "menu"
+        widget: "object"
+        fields:
+          - label: "Options"
+            name: "main"
+            widget: "object"
+            fields:
+              - {label: "Identifier", name: "identifier", widget: "string"}
+              - {label: "Name", name: "name", widget: "string"}
+              - {label: "URL", name: "url", widget: "string"}
+              - {label: "Weight", name: "weight", widget: "number"}
       - { label: "Body", name: "body", widget: markdown }
     
   - name: "root"
@@ -25,3 +40,6 @@ collections:
         fields:
           - {label: "Title", name: "title", widget: "string"}
           - {label: "Upper Heading", name: "upperHeading", widget: "string"}
+          - {label: "Layout", name: "layout", widget: "hidden"}
+          - {label: "URL", name: "url", widget: "hidden"}
+          - {label: "Menu", name: "menu", widget: "hidden"}

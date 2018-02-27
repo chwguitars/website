@@ -1,8 +1,8 @@
 ---
 title: "{{ replace .TranslationBaseName "-" " " | title }}"
+upperHeading: 
 date: {{ .Date }}
 url: "/{{ .TranslationBaseName}}/"
-upperHeading: ""
 menu:
   main:
     identifier: "{{ .TranslationBaseName }}"
