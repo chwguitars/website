@@ -15,7 +15,7 @@ collections:
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Upper Heading", name: "upperHeading", widget: "string"}
       - {label: "Publish date", name: "date", widget: "datetime"}
-      - {label: "URL", name: "Page URL", widget: "string"}
+      - {label: "Page URL", name: "url", widget: "string"}
       - label: "Menu"
         name: "menu"
         widget: "object"
@@ -28,7 +28,7 @@ collections:
               - {label: "Name", name: "name", widget: "string"}
               - {label: "URL", name: "url", widget: "string"}
               - {label: "Weight", name: "weight", widget: "number"}
-      - { label: "Body", name: "body", widget: markdown }
+      - {label: "Body", name: "body", widget: markdown}
     
   - name: "root"
     label: "Protected Pages"
@@ -43,3 +43,4 @@ collections:
           - {label: "Layout", name: "layout", widget: "hidden"}
           - {label: "URL", name: "url", widget: "hidden"}
           - {label: "Menu", name: "menu", widget: "hidden"}
+          - {label: "Body", name: "body", widget: markdown}
