@@ -1,6 +1,6 @@
 {
   "name": "chwguitars",
-  "version": "0.0.1-beta2-fix2",
+  "version": "0.0.1-beta3",
   "private": true,
   "scripts": {
     "build": "gulp build",
