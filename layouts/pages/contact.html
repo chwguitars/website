@@ -10,22 +10,22 @@
           </h2>
           {{ .Content }}
           <h2>Send us an email!</h2>
-          <form action="https://formspree.io/hello@joepurdy.io"
+          <form  class="text-left" action="https://formspree.io/hello@joepurdy.io"
           method="POST">
             <input type="text" name="_gotcha" class="d-none">
             <div class="form-row">
               <div class="form-group col-md-6">
                 <label for="inputName">Name</label>
-                <input type="text" name="name" class="form-control" id="inputName" placeholder="Name">
+                <input type="text" name="name" class="form-control" id="inputName" placeholder="Jimi Hendrix" required>
               </div>
               <div class="form-group col-md-6">
                 <label for="inputEmail">Email</label>
-                <input type="email" name="email" class="form-control" id="inputEmail" placeholder="Email">
+                <input type="email" name="email" class="form-control" id="inputEmail" placeholder="jimi@capitalrecords.com" required>
               </div>
             </div>
             <div class="form-group">
               <label for="inputSubject">Subject</label>
-              <input type="text" name="_subject" class="form-control" id="inputSubject" placeholder="Subject">
+              <input type="text" name="_subject" class="form-control" id="inputSubject" placeholder="Subject" required>
             </div>
             <div class="form-group">
               <label for="inputMessage">Message</label>

@@ -19,6 +19,10 @@ p {
   line-height: 1.75;
 }
 
+img {
+  @extend .img-fluid;
+}
+
 .text-faded {
   color: fade-out($white, 0.7);
 }
@@ -51,6 +55,13 @@ p {
 
   @include media-breakpoint-down(sm) { 
     margin-top: 5rem;
+  }
+
+  @include media-breakpoint-up(lg) {
+    &:after {
+      content: "";
+      margin-bottom: 10rem;
+    }
   }
 }
 
