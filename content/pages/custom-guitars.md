@@ -1,6 +1,6 @@
 ---
 title: Custom Guitars
-upperHeading: Temp
+upperHeading:
 date: 2018-02-24T18:54:49.000Z
 url: /custom-guitars/
 menu:
