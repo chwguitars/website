@@ -1,17 +1,39 @@
 {{ define "main" }}
-    <h1>{{ .Title }}</h1>
-    <p>{{ .Summary }}</p>
-    {{ range .Paginator.Pages }}
-        <article class="card" style="width: 18rem;">
-            <img class="card-img-left" src="{{ "images/" | absURL }}{{ .Params.Image }}" alt="{{ .Title }}">
-            <div class="card-body">
-                <h5 class="card-title">{{ .Title }}</h5>
-                <p class="card-text">{{ .Content }}</p>
-                <a href="{{ .Permalink }}" class="btn btn-primary">Learn More</a>
-            </div>
-        </article>
+<section class="page-section page-heading">
+  <div class="container">
+    {{ with .Params.FeaturedImg }}
+    <img class="img-fluid rounded page-heading-img mb-3 mb-lg-0" src="{{ . }}" alt="">
     {{ end }}
+    <div class="page-content">
+      <div class="row">
+        <div class="col-xl-9 col-lg-10 mx-auto">
+          <div class="bg-faded rounded p-5">
+            <h2 class="section-heading mb-4">
+              {{ with .Params.UpperHeading }}
+              <span class="section-heading-upper">{{ . }}</span>
+              {{ end }}
+              <span class="section-heading-lower">{{ .Title }}</span>
+            </h2>
+            <p>{{ .Summary }}</p>
+            {{ .Content }}
 
-    {{ template "_internal/pagination.html" . }}
-
+            <div class="container">
+                <div class="row justify-content-center">
+                    {{ range .Paginator.Pages }}
+                        <article class="card col-lg-5" style="margin: 1rem;">
+                            <img class="card-img-left" src="{{ .Params.Image }}" alt="{{ .Title }}">
+                            <div class="card-body">
+                                <h5 class="card-title">{{ .Title }}</h5>
+                                <a href="{{ .Permalink }}" class="btn btn-primary">Learn More</a>
+                            </div>
+                        </article>
+                    {{ end }}
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 {{ end }}

@@ -1,6 +1,6 @@
 ---
 title: Rentals
-upperHeading: Temp
+upperHeading:
 date: 2018-02-24T18:55:02.000Z
 url: /rentals/
 menu:

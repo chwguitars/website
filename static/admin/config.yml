@@ -13,7 +13,7 @@ collections:
     slug: "{{slug}}"
     fields:
       - {label: "Title", name: "title", widget: "string"}
-      - {label: "Upper Heading", name: "upperHeading", widget: "string"}
+      - {label: "Upper Heading", name: "upperHeading", widget: "string", required: false}
       - {label: "Publish date", name: "date", widget: "datetime"}
       - {label: "Page URL", name: "url", widget: "string"}
       - label: "Menu"
@@ -30,17 +30,59 @@ collections:
               - {label: "Weight", name: "weight", widget: "number"}
       - {label: "Body", name: "body", widget: markdown}
     
-  - name: "root"
-    label: "Protected Pages"
-    delete: false
+  - name: "section"
+    label: "Section Pages"
     files:
       - name: "home"
         label: "Home Page"
         file: "content/_index.md"
         fields:
           - {label: "Title", name: "title", widget: "string"}
-          - {label: "Upper Heading", name: "upperHeading", widget: "string"}
+          - {label: "Upper Heading", name: "upperHeading", widget: "string", required: false}
           - {label: "Layout", name: "layout", widget: "hidden"}
           - {label: "URL", name: "url", widget: "hidden"}
           - {label: "Menu", name: "menu", widget: "hidden"}
+          - {label: "Body", name: "body", widget: markdown}
+      - name: "guitar-repairs"
+        label: "Guitar Repairs"
+        file: "content/pages/guitar-repairs/_index.md"
+        fields:
+          - {label: "Title", name: "title", widget: "string"}
+          - {label: "Publish date", name: "date", widget: "datetime"}
+          - {label: "Page URL", name: "url", widget: "string"}
+          - label: "Menu"
+            name: "menu"
+            widget: "object"
+            fields:
+              - label: "Options"
+                name: "main"
+                widget: "object"
+                fields:
+                  - {label: "Identifier", name: "identifier", widget: "string"}
+                  - {label: "Name", name: "name", widget: "string"}
+                  - {label: "URL", name: "url", widget: "string"}
+                  - {label: "Weight", name: "weight", widget: "number"}
+          - {label: "Body", name: "body", widget: markdown}
+      - name: "repair-pages"
+        label: "Repair Pages"
+        folder: "content/pages/guitar-repairs"
+        create: true
+        slug: "{{slug}}"
+        fields:
+          - {label: "Title", name: "title", widget: "string"}
+          - {label: "Image Thumbnail", name: "image", widget: "image"}
+          - {label: "Publish date", name: "date", widget: "datetime"}
+          - {label: "Page URL", name: "url", widget: "string"}
+          - label: "Menu"
+            name: "menu"
+            widget: "object"
+            fields:
+              - label: "Options"
+                name: "main"
+                widget: "object"
+                fields:
+                  - {label: "Identifier", name: "identifier", widget: "string"}
+                  - {label: "Name", name: "name", widget: "string"}
+                  - {label: "URL", name: "url", widget: "string"}
+                  - {label: "Weight", name: "weight", widget: "number"}
           - {label: "Body", name: "body", widget: markdown}
