@@ -46,7 +46,7 @@ gulp.task("scss", () => (
     .pipe($.sassLint.format())
     .pipe($.sass({ precision: 5, importer: tildeImporter }))
     .pipe($.autoprefixer(['ie >= 10', 'last 2 versions']))
-    .pipe($.if(isProduction, cssnano({ discardUnused: false, minifyFontValues: false })))
+    .pipe($.if(isProduction, $.cssnano({ discardUnused: false, minifyFontValues: false })))
     .pipe($.size({ gzip: true, showFiles: true }))
     .pipe(gulp.dest('./dist/css'))
     .pipe(browserSync.stream())
