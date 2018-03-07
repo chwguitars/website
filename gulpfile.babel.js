@@ -7,6 +7,7 @@ import cssnext from "postcss-cssnext";
 import BrowserSync from "browser-sync";
 import webpack from "webpack";
 import webpackConfig from "./webpack.conf";
+import cssImport from "postcss-import";
 import cssnano from "cssnano";
 
 const $ = gulpLoadPlugins()
@@ -31,6 +32,7 @@ gulp.task("build-preview", ["scss", "css", "js", "cms-assets", "hugo-preview"]);
 gulp.task("css", () => (
   gulp.src("./src/css/*.css")
     .pipe($.postcss([
+      cssImport({from: "./src/css/main.css"}),
       cssnext(),
       cssnano(),
     ]))
