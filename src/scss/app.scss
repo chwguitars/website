@@ -1,12 +1,11 @@
-// ...
 @import 'variables';
 @import '~bootstrap/scss/bootstrap';
-// // Required
+// Required
 // @import "~bootstrap/scss/functions";
 // @import "~bootstrap/scss/variables";
 // @import "~bootstrap/scss/mixins";
 
-// // Optional
+// Optional
 // @import "~bootstrap/scss/reboot";
 // @import "~bootstrap/scss/type";
 // @import "~bootstrap/scss/images";
@@ -25,7 +24,7 @@
 @import 'buttons';
 @import 'intro';
 @import 'page';
-@import 'products';
+// @import 'products';
 @import 'contact';
 @import 'footer';
 @import 'bootstrap-overrides';

@@ -1,0 +1,230 @@
+backend:
+  name: git-gateway
+
+media_folder: "site/static/image" # Folder where user uploaded files should go
+public_folder: "image"
+
+collections: 
+  - name: "pages"
+    label: "Pages"
+    files:
+      - file: "site/content/_index.md"
+        label: "Home Page"
+        name: "home"
+        fields:
+          - {label: "Title", name: "title", widget: "string"}
+          - {label: "Intro Heading", name: "upperHeading", widget: "string", required: false}
+          - {label: "Layout", name: "layout", widget: "hidden"}
+          - {label: "URL", name: "url", widget: "hidden"}
+          - {label: "Menu", name: "menu", widget: "hidden"}
+          - {label: "Body", name: "body", widget: markdown}
+      - file: "site/content/about/_index.md"
+        label: "About Page"
+        name: "about"
+        fields: 
+          - {label: "Title", name: "title", widget: "string"}
+          - {label: "Publish date", name: "date", widget: "datetime"}
+          - {label: "Intro Header", name: "upperHeading", widget: "string", required: false}
+          - {label: "Page URL", name: "url", widget: "string"}
+          - label: "Menu"
+            name: "menu"
+            widget: "object"
+            fields:
+              - label: "Options"
+                name: "main"
+                widget: "object"
+                fields:
+                  - {label: "Identifier", name: "identifier", widget: "string"}
+                  - {label: "Name", name: "name", widget: "string"}
+                  - {label: "URL", name: "url", widget: "string"}
+                  - {label: "Weight", name: "weight", widget: "number"}
+          - {label: "Body", name: "body", widget: markdown}
+      - file: "site/content/contact/_index.md"
+        label: "Contact Page"
+        name: "contact"
+        fields: 
+          - {label: "Title", name: "title", widget: "string"}
+          - {label: "Publish date", name: "date", widget: "datetime"}
+          - {label: "Intro Header", name: "upperHeading", widget: "string", required: false}
+          - {label: "Page URL", name: "url", widget: "string"}
+          - label: "Menu"
+            name: "menu"
+            widget: "object"
+            fields:
+              - label: "Options"
+                name: "main"
+                widget: "object"
+                fields:
+                  - {label: "Identifier", name: "identifier", widget: "string"}
+                  - {label: "Name", name: "name", widget: "string"}
+                  - {label: "URL", name: "url", widget: "string"}
+                  - {label: "Weight", name: "weight", widget: "number"}
+          - {label: "Body", name: "body", widget: markdown}
+      - file: "site/content/custom-guitars/_index.md"
+        label: "Custom Guitars Page"
+        name: "custom-guitars"
+        fields: 
+          - {label: "Title", name: "title", widget: "string"}
+          - {label: "Publish date", name: "date", widget: "datetime"}
+          - {label: "Intro Header", name: "upperHeading", widget: "string", required: false}
+          - {label: "Page URL", name: "url", widget: "string"}
+          - label: "Menu"
+            name: "menu"
+            widget: "object"
+            fields:
+              - label: "Options"
+                name: "main"
+                widget: "object"
+                fields:
+                  - {label: "Identifier", name: "identifier", widget: "string"}
+                  - {label: "Name", name: "name", widget: "string"}
+                  - {label: "URL", name: "url", widget: "string"}
+                  - {label: "Weight", name: "weight", widget: "number"}
+          - {label: "Body", name: "body", widget: markdown}
+      - file: "site/content/pictures/_index.md"
+        label: "Pictures Page"
+        name: "pictures"
+        fields: 
+          - {label: "Title", name: "title", widget: "string"}
+          - {label: "Publish date", name: "date", widget: "datetime"}
+          - {label: "Intro Header", name: "upperHeading", widget: "string", required: false}
+          - {label: "Page URL", name: "url", widget: "string"}
+          - label: "Menu"
+            name: "menu"
+            widget: "object"
+            fields:
+              - label: "Options"
+                name: "main"
+                widget: "object"
+                fields:
+                  - {label: "Identifier", name: "identifier", widget: "string"}
+                  - {label: "Name", name: "name", widget: "string"}
+                  - {label: "URL", name: "url", widget: "string"}
+                  - {label: "Weight", name: "weight", widget: "number"}
+          - {label: "Body", name: "body", widget: markdown}
+      - file: "site/content/rentals/_index.md"
+        label: "Rentals Page"
+        name: "rentals"
+        fields: 
+          - {label: "Title", name: "title", widget: "string"}
+          - {label: "Publish date", name: "date", widget: "datetime"}
+          - {label: "Intro Header", name: "upperHeading", widget: "string", required: false}
+          - {label: "Page URL", name: "url", widget: "string"}
+          - label: "Menu"
+            name: "menu"
+            widget: "object"
+            fields:
+              - label: "Options"
+                name: "main"
+                widget: "object"
+                fields:
+                  - {label: "Identifier", name: "identifier", widget: "string"}
+                  - {label: "Name", name: "name", widget: "string"}
+                  - {label: "URL", name: "url", widget: "string"}
+                  - {label: "Weight", name: "weight", widget: "number"}
+          - {label: "Body", name: "body", widget: markdown}
+      - file: "site/content/guitar-repairs/_index.md"
+        label: "Guitar Repairs Page"
+        name: "guitar-repairs"
+        fields: 
+          - {label: "Title", name: "title", widget: "string"}
+          - {label: "Image Thumbnail", name: "image", widget: "image", required: false}
+          - {label: "Publish date", name: "date", widget: "datetime"}
+          - {label: "Page URL", name: "url", widget: "string"}
+          - label: "Menu"
+            name: "menu"
+            widget: "object"
+            fields:
+              - label: "Options"
+                name: "main"
+                widget: "object"
+                fields:
+                  - {label: "Identifier", name: "identifier", widget: "string"}
+                  - {label: "Name", name: "name", widget: "string"}
+                  - {label: "URL", name: "url", widget: "string"}
+                  - {label: "Weight", name: "weight", widget: "number"}
+          - {label: "Body", name: "body", widget: markdown}
+      - file: "site/content/guitar-repairs/custom-paint-repairs.md"
+        label: "Custom Paint Page"
+        name: "custom-paint"
+        fields: 
+          - {label: "Title", name: "title", widget: "string"}
+          - {label: "Image Thumbnail", name: "image", widget: "image", required: false}
+          - {label: "Publish date", name: "date", widget: "datetime"}
+          - {label: "Page URL", name: "url", widget: "string"}
+          - label: "Menu"
+            name: "menu"
+            widget: "object"
+            fields:
+              - label: "Options"
+                name: "main"
+                widget: "object"
+                fields:
+                  - {label: "Identifier", name: "identifier", widget: "string"}
+                  - {label: "Name", name: "name", widget: "string"}
+                  - {label: "URL", name: "url", widget: "string"}
+                  - {label: "Weight", name: "weight", widget: "number"}
+          - {label: "Body", name: "body", widget: markdown}
+      - file: "site/content/guitar-repairs/electronic-repairs.md"
+        label: "Electronic Repairs Page"
+        name: "electronic-repairs"
+        fields: 
+          - {label: "Title", name: "title", widget: "string"}
+          - {label: "Image Thumbnail", name: "image", widget: "image", required: false}
+          - {label: "Publish date", name: "date", widget: "datetime"}
+          - {label: "Page URL", name: "url", widget: "string"}
+          - label: "Menu"
+            name: "menu"
+            widget: "object"
+            fields:
+              - label: "Options"
+                name: "main"
+                widget: "object"
+                fields:
+                  - {label: "Identifier", name: "identifier", widget: "string"}
+                  - {label: "Name", name: "name", widget: "string"}
+                  - {label: "URL", name: "url", widget: "string"}
+                  - {label: "Weight", name: "weight", widget: "number"}
+          - {label: "Body", name: "body", widget: markdown}
+      - file: "site/content/guitar-repairs/fret-work.md"
+        label: "Fret Work Page"
+        name: "fret-work"
+        fields: 
+          - {label: "Title", name: "title", widget: "string"}
+          - {label: "Image Thumbnail", name: "image", widget: "image", required: false}
+          - {label: "Publish date", name: "date", widget: "datetime"}
+          - {label: "Page URL", name: "url", widget: "string"}
+          - label: "Menu"
+            name: "menu"
+            widget: "object"
+            fields:
+              - label: "Options"
+                name: "main"
+                widget: "object"
+                fields:
+                  - {label: "Identifier", name: "identifier", widget: "string"}
+                  - {label: "Name", name: "name", widget: "string"}
+                  - {label: "URL", name: "url", widget: "string"}
+                  - {label: "Weight", name: "weight", widget: "number"}
+          - {label: "Body", name: "body", widget: markdown}
+      - file: "site/content/guitar-repairs/miscellaneous.md"
+        label: "Miscellaneous Repairs Page"
+        name: "miscellaneous-repairs"
+        fields: 
+          - {label: "Title", name: "title", widget: "string"}
+          - {label: "Image Thumbnail", name: "image", widget: "image", required: false}
+          - {label: "Publish date", name: "date", widget: "datetime"}
+          - {label: "Page URL", name: "url", widget: "string"}
+          - label: "Menu"
+            name: "menu"
+            widget: "object"
+            fields:
+              - label: "Options"
+                name: "main"
+                widget: "object"
+                fields:
+                  - {label: "Identifier", name: "identifier", widget: "string"}
+                  - {label: "Name", name: "name", widget: "string"}
+                  - {label: "URL", name: "url", widget: "string"}
+                  - {label: "Weight", name: "weight", widget: "number"}
+          - {label: "Body", name: "body", widget: markdown}
