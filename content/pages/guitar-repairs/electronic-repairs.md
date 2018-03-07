@@ -1,6 +1,6 @@
 ---
 title: Electronic Repairs
-image: /uploads/guitar-repairs/electronics.png
+image: /uploads/electronics.png
 date: 2018-02-19T21:28:29-08:00
 url: /guitar-repairs/electronic-repairs/
 menu:

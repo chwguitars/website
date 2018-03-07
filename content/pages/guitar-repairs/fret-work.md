@@ -1,6 +1,6 @@
 ---
 title: Fret Work
-image: /uploads/guitar-repairs/fret-work.png
+image: /uploads/fret-work.png
 date: 2018-02-19T21:28:38-08:00
 url: /guitar-repairs/fret-work/
 menu:
