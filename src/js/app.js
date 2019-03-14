@@ -15,6 +15,8 @@ if (window.location.pathname === "/contact/") {
   setHours();
 }
 
-window.onload = () => {
-  $('#globalModal').modal('show')
+if (window.location.pathname === "/") {
+  window.onload = () => {
+    $('#globalModal').modal('show')
+  }
 }
