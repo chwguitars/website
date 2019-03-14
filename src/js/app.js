@@ -14,3 +14,7 @@ if (window.netlifyIdentity) {
 if (window.location.pathname === "/contact/") {
   setHours();
 }
+
+window.onload = () => {
+  $('#globalModal').modal('show')
+}
