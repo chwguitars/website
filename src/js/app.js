@@ -15,14 +15,9 @@ if (window.location.pathname === "/contact/") {
   setHours();
 }
 
-<<<<<<< HEAD
+
 if (window.location.pathname === "/") {
   window.onload = () => {
     $('#globalModal').modal('show')
   }
 }
-=======
-window.onload = () => {
-  $('#globalModal').modal('show')
-}
->>>>>>> add global popup announcing closure
