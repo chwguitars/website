@@ -55,8 +55,11 @@
           </p>
           <h2>Send us an email!</h2>
           <form class="text-left" name="contact" method="POST" netlify-honeypot="phone" netlify>
-            <input type="text" name="phone" class="d-none">
             <div class="form-row">
+              <div class="form-group col-md-6 d-none">
+                  <label for="inputName">Phone</label>
+                  <input type="text" name="phone" class="form-control" id="phone" placeholder="503-555-5555">
+                </div>
               <div class="form-group col-md-6">
                 <label for="inputName">Name</label>
                 <input type="text" name="name" class="form-control" id="inputName" placeholder="Jimi Hendrix" required>
@@ -72,7 +75,7 @@
             </div>
             <div class="form-group">
               <label for="inputMessage">Message</label>
-              <textarea name="message" class="form-control" id="inputMessage" placeholder="Message"></textarea>
+              <textarea name="message" class="form-control" id="inputMessage" placeholder="Message" required></textarea>
             </div>
             <button type="submit" class="btn btn-primary">Send</button>
           </form>
