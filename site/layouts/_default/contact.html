@@ -54,7 +54,7 @@
             (503) 472-4500
           </p>
           <h2>Send us an email!</h2>
-          <form class="text-left" name="contact" method="POST" netlify-honeypot="phone" netlify>
+          <form class="text-left" name="contact" method="POST" netlify-honeypot="phone" netlify data-netlify-recaptcha="true">
             <div class="form-row">
               <div class="form-group col-md-6 d-none">
                   <label for="inputName">Phone</label>
@@ -77,7 +77,14 @@
               <label for="inputMessage">Message</label>
               <textarea name="message" class="form-control" id="inputMessage" placeholder="Message" required></textarea>
             </div>
-            <button type="submit" class="btn btn-primary">Send</button>
+            <div class="form-row">
+              <div class="col-md-8">
+                <div data-netlify-recaptcha="true"></div>
+              </div>
+              <div class="col-md-4">
+                <button type="submit" class="btn btn-primary w-100">Send</button>
+              </div>
+            </div>
           </form>
         </div>
       </div>
