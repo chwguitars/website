@@ -21,7 +21,7 @@ export function setHours() {
         upper = document.getElementsByClassName("section-heading-upper").item(0),
         lower = document.getElementsByClassName("section-heading-lower").item(0),
         hoursMap = new Map([[0, 'Sunday'], [1, 'Monday'], [2, 'Tuesday'], [3, 'Wednesday'], [4, 'Thursday'], [5, 'Friday'], [6, 'Saturday']]),
-        api = 'https://api.sunwolf.studio/v1/hours/chwguitars';
+        api = 'https://api.purdy.dev/v1/hours/chwguitars';
 
   let hours = new Hours(false, [])
   let xhr = createCORSRequest('GET', api);
