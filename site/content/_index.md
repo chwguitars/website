@@ -27,7 +27,3 @@ Follow CHW Guitars on Facebook & Instagram
     <a href="https://www.instagram.com/accounts/login/?next=%2Fchw_guitars%2F&source=follow" class="btn btn-secondary">Instagram</a>
   </div>
 </div>
-
-Be sure to visit us at our store.
-
-Call us: [503-472-4500](tel:503.472.4500)
